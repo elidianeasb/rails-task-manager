@@ -1,5 +1,18 @@
-<h1>My Tasks</h1>
-<% @tasks.each do |task|%>
-  <li><%= link_to task.title, task_path(task.id) %></li>
-<%end %>
-  <li><%= link_to 'Add a new task', new_task_path %></li>
+<div class="container w-25 mt-5">
+  <h1>My Tasks</h1>
+  <div class="mt-4">
+    <% @tasks.each do |task|%>
+      <div class="d-flex align-items-center mb-2">
+        <% if task.completed %>
+          <i class="fa-solid fa-square-check"></i>
+        <% else %>
+          <i class="fa-regular fa-square"></i>
+        <% end %>
+        <%= link_to task.title, task_path(task.id), class:"ms-3 text-decoration-none"%>
+      </div>
+    <%end %>
+  </div>
+  <div class="mt-5">
+    <%= link_to 'Add a new task', new_task_path, class:"btn-add mt-5" %></button>
+  </div>
+<div>

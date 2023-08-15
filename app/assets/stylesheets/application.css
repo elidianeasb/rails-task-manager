@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+.btn-add {
+  padding: 10px;
+  background-color: rgb(24, 156, 149);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  border-style: none;
+}
+
+.btn-edit {
+  padding: 10px;
+  background-color: rgb(24, 156, 149);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-delete {
+  text-decoration: none;
+  font-size: 22px;
+}
